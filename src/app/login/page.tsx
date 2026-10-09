@@ -115,11 +115,35 @@ export default async function LoginPage({
 
           <div className={styles.field}>
             <label
-              htmlFor="password"
-              className={styles.label}
-            >
-              🔒 Senha
-            </label>
+  htmlFor="password"
+  className={styles.label}
+>
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    aria-hidden="true"
+  >
+    <rect
+      x="5"
+      y="10"
+      width="14"
+      height="11"
+      rx="2"
+      stroke="currentColor"
+      strokeWidth="1.7"
+    />
+    <path
+      d="M8 10V7a4 4 0 0 1 8 0v3"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+    />
+  </svg>
+
+  Senha
+</label>
 
             <input
               id="password"

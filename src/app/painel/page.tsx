@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { logout } from "./actions";
 import styles from "./painel.module.css";
 
 export default async function PainelPage() {
@@ -49,9 +50,11 @@ export default async function PainelPage() {
             Integração TID
           </button>
 
-          <button type="button" className={styles.topButton}>
-            Sair
-          </button>
+          <form action={logout}>
+  <button type="submit" className={styles.topButton}>
+    Sair
+  </button>
+</form>
         </div>
       </div>
 
